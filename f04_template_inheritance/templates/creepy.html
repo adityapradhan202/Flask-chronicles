@@ -1,0 +1,10 @@
+{% extends "layout.html" %} <!--Inherit from layout.html-->
+{% block content %}
+    <h2>Welcome to creepy site!</h2>
+    <img src="https://media.tenor.com/bIiFxQ8N6qkAAAA1/michael-jackson-babjix.webp">
+
+    {% if users.type == "authority" %}
+    <p>DISCLAIMER - This site for fun purpose only. There's nothing suspicious going on :D</p>
+    {% endif %}
+
+{% endblock content %}

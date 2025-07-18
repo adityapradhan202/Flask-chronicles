@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Home Page
+        </title>
+    </head>
+    <body>
+        <h2>Home page!</h2>
+        <!--All the blog post here-->
+        <!--We will use jinja template here-->
+
+        <!--Using Jinja template for loops-->
+        <!--Start the for loop and loop through the variable sent through render function-->
+        {% for post in posts %}
+            <h2>{{post.title}}</h2>
+            <h3>Posted by {{post.author}} on {{post.date_posted}}</h3>
+            <p>Content: {{post.content}}</p>
+        {% endfor %} <!--End for loop-->
+
+        {% for user in user_data %}
+            <!--If statements using Jinja template-->
+            <p>User type = {{user.type}}</p>
+
+            {% if user.type == "Admin" %}
+                <h3>Acess Granted</h3>
+            {% elif user.type == "Client" %}
+                <h3>Access Denied</h3>
+            <!--Similarly we can write else block as well-->
+            {% endif %}
+        {% endfor %}
+        
+        <br>
+        <h3>Numbers:-</h3>
+        <!--Anoter for loop-->
+        {% for i in range(5) %}
+            <p>{{i}}</p>
+        {% endfor %}
+
+        <!--Note: So Jinja2 helps us to inject python code into html! -->
+
+    </body>
+</html>
