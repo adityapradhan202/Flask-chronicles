@@ -1,0 +1,44 @@
+<!--Let's understand forms-->
+<!--Forms are very important for taking user input-->
+
+<!DOCTYPE html>
+<html>
+    <head><title>Forms</title></head>
+    <body>
+
+        <!--All the contents of forms should be enclosed within forms tag-->
+        <form method="post">
+            <!--Get method is not secure-->
+            <!--When we use get method info gets appended in the url-->
+            <!--Get method is okay for the case when user has to search something-->
+            <!--Post method is for secure transfer of data, it's safe-->
+
+            <!--First input-->
+            <div>
+                <label for="phone">Phone number</label>
+                <input type="text" id="phone" name="phone_no" placeholder="enter your phone number" required>
+            </div>
+            <!--The for of label and input's id should be same-->
+            <!--This helps for screen readers-->
+            <!--Also when we click on the caption, cursor will reach the corresponding input field-->
+            <!--The name="phone_no" means when info will be submitted, the variable having the phone number will be 'phone_no'-->
+            <!--'required' attribute makes sure that the info has been entered before submitting-->
+
+            <br>
+            <!--Second input-->
+            <div>
+                <label for="preference">Hostel preference</label>
+                <input type="text" id="preference" name="h_preference" placeholder="Enter your hostel preference" required>
+            </div>
+            
+
+            <br>
+            <!--We can add a reset button-->
+            <input type="reset">
+            <input type="submit"> <!--Submit button submits the information-->
+
+
+        </form>
+        
+    </body>
+</html>

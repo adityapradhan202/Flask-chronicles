@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Forms</title></head>
+    <body>
+        <form action="take_action.php" method="post">
+            <!--action attribute is for connecting it to the server-->
+
+            <!--We can try different sorts of input-->
+            <!--There are different types such as tel for phone number, dates, integer numbers etc-->
+
+            <!--There's also a password field-->
+            <label for="pass">Password</label>
+            <input type="password" id="pass" required placeholder="enter password" maxlength="56" name="pswd">
+
+            <label for="date">Enter date</label>
+            <input type="date" id="date" required placeholder="enter data and time" name="dtime">
+
+            <br>
+            <input type="reset">
+            <input type="submit">
+
+            <!--Radio buttons-->
+            <br><br>
+            <p>Select your gender:</p>
+            <div>
+                <label for="fgener.">Mrs.</label>
+                <input type="radio" id="fgender." name="gender">
+
+                <label for="mgender">Mr.</label>
+                <input type="radio" id="mgender." name="gender">
+                <!--Both of the radio buttons are having same name-->
+                <!--Either one of the radio buttons can be preseedn in that case-->
+            </div>
+
+
+            <br><br>
+            <p>Selec the food type:</p>
+            <div>
+                <label for="food">Food Type</label>
+                <select id="food" name="food">
+                    <!--Inside the select tag we put the options using option tag-->
+                    <option value="veg">Veg</option>
+                    <option value="nonveg">NonVeg</option>
+                    <option value="jain">Jain</option>
+                    <option value="south">South</option>
+                    <!--value is the actual value that the form will send stored in name variable-->
+                </select>
+            </div>
+        
+
+        </form>
+    </body>
+</html>
