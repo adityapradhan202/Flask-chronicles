@@ -1,0 +1,35 @@
+/*Before doing anything write the boiler plate given below, exactly!*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+/*Now we can start the actual work*/
+/*To target id use #
+To target a class use .
+To target a tag just mention the tag*/
+
+#container{
+    background-color: blue;
+    width: 50%;
+    height: 50%;
+}
+
+/*
+About % and px
+1. Use % when you want to take the size with respect to the entire scree. The entire screen can be of any resolution, depending on the device.
+2. px is like for small distances. For example 10 px will move the text just by a little.
+*/
+
+p{
+    color: white;
+    font-size: 30px;
+}
+

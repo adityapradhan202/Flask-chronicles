@@ -1,0 +1,21 @@
+/*Boiler plate first*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+/*Now we can do styling*/
+#main{
+    width: 100%;
+    height: 100%;
+    background-image: url(sample_wallpaper.jpg);
+    background-size: cover; /*covers the entire div*/
+    background-position: center; /*what part of image we want to focus on (eg. top, bottom or center)*/
+
+}
