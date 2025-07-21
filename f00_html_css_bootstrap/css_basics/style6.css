@@ -11,7 +11,8 @@ html, body{
 }
 
 /*Now we can do styling*/
-/*Understand the analogy:*/
+/*Absolute: Can be placed anywhere
+Relative parent + absolute child means child is moved with reference to the parent*/
 #playground1{
     width: 30%;
     height: 30%;
@@ -25,24 +26,22 @@ html, body{
     left: 400px;
 }
 
-/*playground2 is good*/
-/*let's try to make the kid run out of the playground, and see if he really can*/
 #playground2{
     width: 30%;
     height: 30%;
     background-color: cornflowerblue;
     position: relative;
-    left: 200px;
+    /*moving the parent by 100px, child will move along*/
+    /*because child's position is in reference to the parent*/
+    left: 100px; 
 }
 
 #kid2{
-    /*It's the same kid*/
     width: 50%;
     height: 50%;
     background-color: rgb(246, 221, 184);
     position: absolute;
-    margin-left: 50px;
-    margin-top: 50px;
-    
-    /*Kid is pushed by same pixels or we can say it has the same desire to run away*/
+    left: 40%;
 }
+/*now a doubt may arise, what if there are multiple parents and children*/
+/*this relative-absolute thing will still work! Even if the middle body is absolute, outer most is relative, the middle one has a child, it will still behave like a relative to the most inner child*/
