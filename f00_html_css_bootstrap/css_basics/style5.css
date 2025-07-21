@@ -1,0 +1,48 @@
+/*Boiler plate first*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+/*Notes:
+(These analogies can be a little hard to visualize and grasp!)
+1. Whenever we make something absolute, it starts hovering on a level
+2. The level at which the element hovers is same as the chronological position at which it is present with respect to others.
+3. Visualize the div containers as cars. If one cars becomes absolute, then it is on flyover. Suppose it was in the middle of two cars. Now our car is car number 2. Car number 2 climbs the flyover. Car number 3 takes the place of car 2, where car 2 was present earlier, and now car 3 is behind car 2. But we see all of this, in the top view. If car 2 is bigger enough, then we might not be able to see the car 3 completely.*/
+
+
+/*Now we can do styling*/
+/*Let's make the first two cars climb the flyover*/
+/*Car2 will be at a higher flyover than car 1*/
+#box1{
+    position: absolute;
+    /*If something becomes absolute, if something is hovering, we can make it go left right etc*/
+    /*Let's push it a little from the left*/
+    left: 50px;
+    /*left, right, top attribute can only be used when we make something absolute!*/
+    background-color: blue;
+    width: 30%;
+    height: 20%;
+}
+#box2{
+    /*Let's make the car2 also climb flyover, but it will higher than flyover of car1*/
+    position: absolute;
+    background-color: red;
+    width: 25%;
+    height: 30%;
+}
+#box3{
+    /*position: absolute;*/
+    /*Car3 moves forward, and we won't be able to see it because it is below car2 and car1*/
+    /*Uncomment the position: absolute line to make the car3 climb flyover of level 3*/
+    background-color: chartreuse;
+    width: 10%;
+    height: 15%;
+}
+
+/*Note: Move to next index.html and css file to understand relative positioning*/

@@ -1,0 +1,35 @@
+/*Boiler plate first*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+/*Now we can do styling*/
+#box1{
+    background-color: blue;
+    width: 30%;
+    height: 20%;
+}
+#box2{
+    /*Analogy: Make the box2 absolute, this will be hovering in air, at level two, box3 will slide and snap to the box1*/
+    /*It is just like if a car takes the flyover to the right or left, the cars behind take its place*/
+    /* position: absolute; */
+    background-color: red;
+    width: 25%;
+    height: 30%;
+}
+#box3{
+    /*position: absolute;*/
+    position: absolute;
+    background-color: chartreuse;
+    width: 40%;
+    height: 35%;
+}
+
+/*Note: Move to next index.html file to understand more!*/
