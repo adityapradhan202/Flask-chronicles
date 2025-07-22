@@ -81,6 +81,15 @@ def login():
 def user_logged_in(usr):
     return render_template("logged_in.html", user=usr)
 
+# Explanation of how return redirect(url_for("user_logged_in", usr=database[email][1])) is working here
+# It will create a route like /username, because it first takes the route of that particular function
+# Then it appends unknown keyword paremeter's value to it
+# And the url of this function should of type /<string:usr>, so everything works out collectively
+# /username is route of a particular function, and it will be redirected to that particular function
+
+# Suppose we want to send two variables
+# Then the function's route should be of type /value1/value2
+# Remember that these values will be displayed in the url
 
 if __name__ == "__main__":
     app.run(debug=True)
