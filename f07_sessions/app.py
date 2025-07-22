@@ -10,6 +10,9 @@ from flask import Flask
 
 app = Flask(__name__)
 app.secret_key = b'asdavmjk4%4*@kak' # b in from of a string converts into raw binary data
+# What does the secret key do?
+# The data of the user that the server stores temporarily, is first encrypted
+# This encryption is done by using a confidential 'secret_key', that is why secret_key is important
 
 @app.route("/")
 @app.route("/home")
