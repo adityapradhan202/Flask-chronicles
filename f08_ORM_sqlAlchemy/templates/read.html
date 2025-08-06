@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>read</title>
+    </head>
+    <body>
+        
+        {% for row in dbrows %}
+            <div id="task-container">
+                <p>{{row.id}} - {{row.task}}</p>
+                <!--Adding update button for every task-->
+                <a href="{{url_for('update', id=row.id)}}"><Button>Update</Button></a>
+            </div>
+            
+        {% endfor %}
+        
+    </body>
+</html>
